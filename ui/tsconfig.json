@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./api/scripts",
+        "module": "esnext",
+        "target": "es5",
+        "allowJs": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+    },
+    "include": [
+      "src"
+    ]
+}
