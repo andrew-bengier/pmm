@@ -120,6 +120,39 @@ USE_I18N = True
 
 USE_TZ = True
 
+LOGGING = {
+    'version': 1.0,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'pmm.log',
+            'formatter': 'verbose'
+        },
+        'console':{
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+    },
+    'loggers': {
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['file', 'console'],
+            'propagate': True
+        }
+    },
+    'formatters': {
+        'verbose': {
+            'format': '[%(asctime)s] - {%(name)s:%(module)s} - [%(levelname)s] - %(message)s',
+            'datefmt': '%m/%d/%Y %I:%M:%S %p'
+        },
+        'simple': {
+            'format': '[%(asctime)s] - [%(levelname)s] - %(message)s',
+            'datefmt': '%m/%d/%Y %I:%M:%S %p'
+        },
+    },
+}
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 

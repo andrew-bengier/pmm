@@ -85,6 +85,7 @@ function App() {
                     </Box>
                 </Box>
             </BrowserRouter>
+            <CssBaseline />
         </ThemeProvider>
     );
 };
