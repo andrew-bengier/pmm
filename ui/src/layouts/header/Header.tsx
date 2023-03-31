@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProperties> = (props: HeaderProperties) => {
     }
 
     return (
-        <AppBar position="fixed"
+        <AppBar position="fixed" color="primary" enableColorOnDark
             sx={{
                 ...(props.sideNavOpen && {
                     width: `calc(100% - ${props.openSideNavWidth}px)`,

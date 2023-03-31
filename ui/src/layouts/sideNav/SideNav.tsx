@@ -94,7 +94,7 @@ const SideNav: React.FC<SideNavProperties> = (props: SideNavProperties) => {
             variant="permanent"
             anchor="left"
         >
-            <AppBar position="static"
+            <AppBar position="static" color="primary" enableColorOnDark
                 sx={{
                     ...(props.sizeProperties.sideNavOpen && {
                         width: `${props.sizeProperties.openSideNavWidth}px`

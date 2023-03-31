@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import LightTheme from "./themes/LightTheme";
 import DarkTheme from "./themes/DarkTheme";
 
-import {ThemeProvider} from "@mui/material";
+import {ThemeProvider, Typography} from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from '@mui/material/Box';
 
@@ -49,6 +49,7 @@ function App() {
                     error: "Error retrieving sync services"
                 }
             );
+
             if (response.status === 200) {
                 console.log(response.data);
             }
@@ -81,7 +82,7 @@ function App() {
                             })
                         }}
                     >
-                        <div>TEST Typescript</div>
+                        <Typography align="center" color="textPrimary">TEST Typescript</Typography>
                     </Box>
                 </Box>
             </BrowserRouter>
