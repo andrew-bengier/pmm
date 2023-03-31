@@ -1,7 +1,11 @@
 env/
+env*/
 
 *.sqlite3
 
 ui/node_modules
 
 *.log
+
+
+.idea/
